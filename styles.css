@@ -1,0 +1,144 @@
+body{
+    background-image: linear-gradient(10deg, rgb(103, 252, 103),rgb(126, 126, 228));
+}
+.center{
+    text-align: center;
+}
+
+/* class with 20px as font size and font weight as bold  */
+
+.bold20px{
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+/* our flex container class  */
+
+.flexcontainer{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input Form classes */
+
+.inputform{
+    margin-top: 150px;
+    margin-left: 350px;
+    font-size: 25px;
+    font-weight: 700;
+    width: 500px;
+    padding: 10px;
+
+}
+
+.inputform label{
+    margin-left:180px ;
+}
+
+.inputf{
+    display: block;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+    width: 450px;
+    background-image: linear-gradient(110deg, cyan,pink);
+    border: 2px solid brown;
+}
+
+/* style for submit button of our input form  */
+
+#submitButton{
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 180px;
+    margin-left: 150px;
+    background-color: red;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+#submitButton:hover{
+    background-color: green;
+}
+
+/* student data section */
+
+.studentdata{
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 500px;
+    width: 95%;
+    overflow: auto;
+}
+
+.studentdata table, th, td {
+    border: 2px solid ;
+    border-collapse: collapse;
+    padding: 10px;
+    font-size: 25px;
+  }
+
+  /* giving styles to input entry in data of table when appending in javascript to make it editable with edit button  */
+
+  .studentdata table input{
+    font-size: 20px;
+    font-weight: 600;
+    background-color: transparent ;
+    border: none;
+   text-align: center;
+   padding: 0;
+   color: black;
+  }
+
+  .tabledata{
+    background-image: linear-gradient(150deg,magenta, red);
+  }
+
+  /* styles for our delete button  */
+
+  .deleteButton{
+    height: 40px;
+    width: 30px;
+    padding: 5px;
+    background-color: red;
+    margin: 5px;
+
+  }
+
+  /* styles for our edit button  */
+
+  .editButton{
+    height: 40px;
+    width: 30px;
+    padding: 5px;
+    background-color: blue;
+    margin: 5px;
+    color: white;
+  }
+
+  /* styles for our save button  */
+
+  .saveButton{
+    height: 40px;
+    width: 30px;
+    padding: 5px;
+    background-color: green;
+    margin: 5px;
+  }
+
+  /* styles for our exit button  */
+
+  .exitButton{
+    height: 40px;
+    width: 30px;
+    padding: 5px;
+    background-color: red;
+    margin: 5px;
+  }
+

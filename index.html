@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Resgistration Potrtal</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+</head>
+
+<!-- header with title and information about this project  -->
+
+<header>
+    <h1 class="center">Student Registration System</h1>
+    <p class="center bold20px" >So in this system Admin can Enter Student details like their Full Name, Email Id, Student Id and  their Phone Number and it will be stored in table below the form as soon as he clicks on submit button. Admin can Also edit or delete a student record if it is wrong. Also no empty input or Duplicate Entry Allowed for student id , email or phone number. If same data entered and submitted it will not show in table and also it will show an error Alert with "Student Data Already Exist". Name can only contains alphabtes and space. Mobile No. can Contain Only Numbers with minimum length 10.</p>
+</header>
+<body>
+
+    <!-- our flex container containing our input form and student data table  -->
+
+    <div class="flexcontainer">
+    <div>
+
+        <!-- student data input form for taking new entries -->
+        
+    <form  id="form"  class="inputform"  action="">
+        <fieldset>
+<legend>
+    <h3>Student Information Form</h3>
+</legend>
+        
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" class="inputf" required pattern="[a-z A-Z]+" title="Only alphabets allowed in name">
+        <label for="id">Student Id</label>
+        <input type="number" id="id" name="id" class="inputf" required>
+        <label for="email">Email ID</label>
+        <input type="email" id="email" name="email" class="inputf" required>
+        <label for="mobile">Mobile No.</label>
+        <input type="text" id="mobile" name="mobilenumber" class="inputf" required pattern="[0-9]+"  minlength="10" title="Mobile No. must be of 10 Letters and Contain only Numbers">
+        <input id="submitButton" type="submit">
+    </fieldset>
+    </form>
+</div>
+
+<!-- student data table to show inserted data through Registration form  -->
+ 
+<div class="studentdata">
+    <table id="studentdata">
+        <tr>
+            <th>Name</th>
+            <th>Student ID</th>
+            <th>Email ID</th>
+            <th>Mobile No.</th>
+        </tr>
+    </table>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
